@@ -2,9 +2,6 @@
 # ADAWIE20FORGE
 
 
-if video url availale
-[![Video](http://img.youtube.com/vi/MKWrQO8cI8c/0.jpg)](https://youtu.be/MKWrQO8cI8c)
-
 
 ## File Structure
 ---
