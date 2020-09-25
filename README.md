@@ -67,6 +67,13 @@ if video url availale
 4. It will open up the UI with a generated sonnet
 5. Click on "Generate" button to generate next sonnet
 
+### From Executable
+1. Open the Folder Executable
+2. Extract the zip folder uiscroll
+3. After Extraction is completed.Open the folder and run uiscroll.exe
+4. It will open up the UI with a generated sonnet
+5. Click on "Generate" button to generate next sonnet
+
 ## Visualisation of program(Dataset)
 ---
 ### Using Command Prompt
