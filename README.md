@@ -2,7 +2,6 @@
 # ADAWIE20FORGE
 
 
-
 ## File Structure
 ---
 * Sonnet Generator
