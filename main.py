@@ -108,7 +108,7 @@ def linesNum(number_of_lines):
             "stats" : STATUS_FAILED
         }), 400 
 
-    if number_of_lines <=8 :
+    if number_of_lines <=4 :
         text_model = model()
         ans = generate(text_model = text_model, number_of_lines = number_of_lines)
         return jsonify({
@@ -118,7 +118,7 @@ def linesNum(number_of_lines):
             })
     else:
         text_model = model()
-        ans = generate(text_model = text_model, number_of_lines = 8)
+        ans = generate(text_model = text_model, number_of_lines = 4)
         mem = ans[-1].split(' ')[-1]
         return jsonify({
             "data" : ans,
@@ -154,8 +154,8 @@ def linesNumCont(number_of_lines, number_of_lines_rendered, memory):
         }), 400 
 
     text_model = model()
-    if number_of_lines - number_of_lines_rendered >= 8:
-        ans = generate(text_model = text_model, number_of_lines = 8, memory=memory)
+    if number_of_lines - number_of_lines_rendered >= 4:
+        ans = generate(text_model = text_model, number_of_lines = 4, memory=memory)
     else:
         ans = generate(text_model = text_model, 
                         number_of_lines = number_of_lines, 
