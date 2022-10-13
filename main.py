@@ -1,5 +1,6 @@
 from flask import Flask, jsonify
 from joblib import load
+import nltk
 from nltk.corpus import wordnet, cmudict
 from markdown import markdown
 from flask_cors import CORS
@@ -343,4 +344,6 @@ def replaceWords(text):
     return " ".join(textar)
 
 if __name__ == '__main__':
+    nltk.download('cmudict')
+    nltk.download('wordnet')
     app.run(debug=True)
